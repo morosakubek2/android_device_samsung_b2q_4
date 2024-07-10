@@ -1,5 +1,19 @@
 # All unpinned blobs are extracted from S9110ZHS2AWI2
 
+# Graphics (Adreno firmware)
+vendor/firmware/a740_sqe.fw
+vendor/firmware/a740_zap.b00
+vendor/firmware/a740_zap.b01
+vendor/firmware/a740_zap.b02
+vendor/firmware/a740_zap.elf
+vendor/firmware/a740_zap.mbn
+vendor/firmware/a740_zap.mdt
+vendor/firmware/gmu_gen70200.bin
+vendor/gpu/kbc/sequence_manifest.bin
+vendor/gpu/kbc/unified_kbcs_32.bin
+vendor/gpu/kbc/unified_kbcs_64.bin
+vendor/gpu/kbc/unified_ksqs.bin
+
 # ACDB
 vendor/etc/audconf/OPEN/acdb_cal.acdb
 vendor/etc/audconf/OPEN/workspaceFileXml.qwsp
@@ -174,9 +188,6 @@ vendor/etc/midas/SRIBMidas_aiHDR_V600_FP16_sm8550_snpe231.dlc
 vendor/etc/midas/SRIBMidas_aiMOIREREMOVE_Coarse_V900_FP16_sm8550_snpe231.dlc
 vendor/etc/midas/SRIBMidas_aiMOIREREMOVE_Fine_V900_FP16_sm8550_snpe231.dlc
 vendor/etc/midas/SRIBMidas_aiUPSCALER_1X_V200_FP16_sm8550_snpe231.dlc
-vendor/etc/midas/SRIBMidas_aiUPSCALER_2X_V200_FP16_sm8550_snpe231.dlc
-vendor/etc/midas/SRIBMidas_aiUPSCALER_3X_V200_FP16_sm8550_snpe231.dlc
-vendor/etc/midas/SRIBMidas_aiUPSCALER_4X_V200_FP16_sm8550_snpe231.dlc
 vendor/etc/midas/midas_config.json
 vendor/etc/midas/moire_detection/moire_detection.tflite
 
@@ -184,13 +195,12 @@ vendor/etc/midas/moire_detection/moire_detection.tflite
 vendor/etc/nfc/libnfc-nxp_RF.conf
 
 # RIL
+vendor/etc/init/vendor.samsung.rilchip.qcom.rc
 
 # Saiv
 
 vendor/saiv/ainr/db/AINRNetVendor-timestamp
 vendor/saiv/ainr/db/GRAW_3DISP_AI_NR_V5_5_4_832X1072X3_e3188-2.4.3-FP16-sm8550.dlc
-vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf
-vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite
 vendor/saiv/image_understanding/db/hdr_verifier/hdr_verifier_cnn.dlc
 vendor/saiv/image_understanding/db/hdr_verifier/hdr_verifier_cnn.info
 vendor/saiv/image_understanding/db/moon_verifier/moon_verifier_cnn.info
@@ -279,24 +289,19 @@ vendor/lib64/libsecaudiolevel.so
 system/lib64/android.hardware.audio.common-V1-ndk.so
 vendor/lib64/libSemDataProps.so
 vendor/lib64/liblocation_api_msg.so
-vendor/lib64/libqmiservices-sem-ext.so
 vendor/lib64/libDeviceInfoProvider.so
 vendor/lib64/android.hardware.bluetooth.audio-V1-ndk.so
 vendor/lib64/libloc_base_util.so
 vendor/lib64/libsfp_teegw.so
-system_ext/lib/vendor.qti.qspmhal@1.0.so
 system_ext/lib64/vendor.qti.qspmhal@1.0.so
 vendor/lib64/vendor.qti.qspmhal@1.0.so
 vendor/lib64/libfloatingfeature_hal.so
-vendor/lib64/libqmiservices-ext.so
 vendor/lib64/libSemTelephonyProps.so
 vendor/lib64/android.hardware.biometrics.fingerprint-V2-ndk.so
 vendor/lib64/libLocalTM_preview_core.so
 vendor/lib64/libtswrappercommon.so
-system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so
 system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so
 vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so
-system/lib/libsavscmn.so
 system/lib64/libsavscmn.so
 vendor/lib64/libsavscmn.so
 vendor/lib64/lib_lvacfs.so
@@ -392,7 +397,6 @@ vendor/etc/singletake/dynamic_viewing/FaceEngine_model/FERDetModel.dat
 vendor/etc/singletake/dynamic_viewing/FaceEngine_model/FERTrackModel.dat
 vendor/etc/singletake/dynamic_viewing/action172_t0_quantized.tflite
 vendor/etc/singletake/dynamic_viewing/movinet_t0.tflite
-vendor/etc/singletake/dynamic_viewing/score_model_t0.tflite
 vendor/etc/singletake/jumpshot/ActionShotPose.dlc
 vendor/etc/singletake/jumpshot/ActionShotPosture.dlc
 vendor/etc/singletake/saliency/FixPNet.dlc
