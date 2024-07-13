@@ -5,20 +5,21 @@
 #
 
 # Include the common OEM chipset BoardConfig.
-include device/samsung/sm8550-common/BoardConfigCommon.mk
+include device/samsung/sm8350-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/samsung/dm1q
+DEVICE_PATH := device/samsung/b2q
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := dm1q
+TARGET_OTA_ASSERT_DEVICE := b2q
 
 # Display
-TARGET_SCREEN_DENSITY := 450
+#TARGET_SCREEN_DENSITY := 450
 
 #Kernel
 TARGET_KERNEL_DIR := $(DEVICE_PATH)-kernel
 BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_DIR)/dtbo.img
 BOARD_PREBUILT_DTBIMAGE_DIR := $(TARGET_KERNEL_DIR)
+TARGET_PREBUILT_DTB := $(TARGET_KERNEL_DIR)/dtb.img
 
 # Kernel Modules
 BOARD_SYSTEM_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modules.load.system_dlkm))
