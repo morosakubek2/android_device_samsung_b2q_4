@@ -9,20 +9,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from the device configuration.
-$(call inherit-product, device/samsung/dm1q/device.mk)
+$(call inherit-product, device/samsung/b2q/device.mk)
 
 # Inherit from the Lineage configuration.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_dm1q
-PRODUCT_DEVICE := dm1q
-PRODUCT_BRAND := Samsung
-PRODUCT_MODEL := SM-S9110
-PRODUCT_MANUFACTURER := Samsung
-
+PRODUCT_NAME := twrp_b2q
+PRODUCT_DEVICE := b2q
+PRODUCT_MODEL := SM-F711B
+PRODUCT_BRAND := samsung
+PRODUCT_MANUFACTURER := samsung
 PRODUCT_GMS_CLIENTID_BASE := android-samsung
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="dm1qxxx-user 13 TP1A.220624.014 S911BXXU3CXD3 release-keys"
-
-BUILD_FINGERPRINT := samsung/dm1qxxx/dm1q:13/TP1A.220624.014/S911BXXU3CXD3:user/release-keys
