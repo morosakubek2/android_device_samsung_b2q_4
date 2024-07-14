@@ -9,8 +9,8 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
 # Boot animation
-TARGET_SCREEN_HEIGHT := 2340
-TARGET_SCREEN_WIDTH := 1080
+#TARGET_SCREEN_HEIGHT := 2340
+#TARGET_SCREEN_WIDTH := 1080
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
-    init.dm1q.rc
+    init.b2q.rc
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
@@ -30,12 +30,12 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    FrameworksResDm1q
+    FrameworksResB2q
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Inherit from the common OEM chipset makefile.
-$(call inherit-product, device/samsung/sm8550-common/common.mk)
+$(call inherit-product, device/samsung/sm8350-common/common.mk)
 
 # Inherit from the proprietary files makefile.
-$(call inherit-product, vendor/samsung/dm1q/dm1q-vendor.mk)
+$(call inherit-product, vendor/samsung/b2q/b2q-vendor.mk)
